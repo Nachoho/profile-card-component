@@ -1,0 +1,143 @@
+:root{
+    --clr-primary-400: hsl(185, 75%, 39%);
+    --clr-primary-600: hsl(229, 23%, 23%);
+    --clr-primary-300: hsl(227, 10%, 46%);
+
+    --clr-neutral-200: hsl(0, 0%, 59%);
+
+    --font-family: 'Kumbh Sans', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fs: 1.125rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    background-color: var(--clr-primary-400);
+}
+
+
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin: 2rem;
+
+}
+
+.profile-img{
+    border-radius: 50%;
+    border: 5px solid #fff;
+    z-index: 1;
+    transform: translateY(-3.1rem);
+    margin-bottom: -2rem;
+}
+
+.profile-info{
+    display: grid;
+    grid-template-rows: 2fr;
+    justify-items: center;
+    color: var(--clr-primary-300);
+    font-weight: var(--fw-regular);
+    padding-bottom: 1rem;
+}
+
+.profile__name{
+    text-decoration: none;
+    color: var(--clr-primary-600);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs);
+}
+
+.profile-stats{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    margin: 1rem;
+
+    color: var(--clr-primary-300);
+    font-size: smaller;
+}
+
+
+.profile-stats > div{
+    display: grid;
+    justify-items: center;
+    font-weight: var(--fw-regular);
+}
+
+h4{
+    text-decoration: none;
+    color: var(--clr-primary-600);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs);
+}
